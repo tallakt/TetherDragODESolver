@@ -20,7 +20,7 @@ for more traditional designs such as Yoyo or Flygen [bounding and hovering
 flight patterns of a single kite].
 
 More information about the math is found in
-[docs/a_simplified_drag_estimate_for_a_tether_with_a_belly.pdf]
+(this PDF)[docs/a_simplified_drag_estimate_for_a_tether_with_a_belly.pdf]
 
 This runs entirely in Julia.
 
