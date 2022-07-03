@@ -10,18 +10,19 @@ solving the 3D equations governing the tether shape subjected to drag and
 centrifugal forces in a quasi-static manner. Note only apparent wind is used
 and not actual wind, to make the solution independent on shaft orientation.
 
-After doing that, on emay perhaps opt to go back to the straight line models
-after adjusting the effective drag coefficient if necessary.
+After doing that, one may perhaps opt to go back to the straight line models
+after adjusting the effective drag coefficient if necessary. The code nicely
+verifies the 1/4 tether drag assumption for conventional (non-TRPT) AWE.
 
 The code may be used for TRPT [Tensile Rotary Power Transmission] AWE plants
 that rely on the shaft to transfer power from the kites to the ground, or also
 for more traditional designs such as Yoyo or Flygen [bounding and hovering
 flight patterns of a single kite].
 
+More information about the math is found in
+[docs/a_simplified_drag_estimate_for_a_tether_with_a_belly.pdf]
 
-An in-depth paragraph about your project and overview of use.
-
-The code runs entirely in Julia.
+This runs entirely in Julia.
 
 ## Getting Started
 
@@ -104,7 +105,5 @@ end
 ![The plot as produced by the code above](images/plot3.png "The shape of a TRPT tether with little tension")
 
 ## Authors
-
-Contributors names and contact info
 
 [@tallakt](https://twitter.com/tallakt)
