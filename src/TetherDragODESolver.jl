@@ -122,7 +122,7 @@ function solve_tether(rotational_speed::Float64, tension::Float64, radius0::Floa
     (x1 - x1s)^2 + (y1 - y1s)^2
   end
 
-  opt = optimize(minimizer, normalize([x1 - x0, y1 - 0.0]))
+  opt = Optim.optimize(minimizer, normalize([x1 - x0, y1 - 0.0]))
   (dx0, dy0) = opt.minimizer
 
   # solve_with_initial_derivatives(dx0, dy0)
